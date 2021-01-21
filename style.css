@@ -1,0 +1,18 @@
+*{margin: 0;padding: 0;font-family: 'Yusei Magic', sans-serif;}
+.half-width {width: 40%;float: left;margin: 5%;margin-top: 25px;}
+.half-width h1{font-size: 48px;margin-top:0px;}
+.half-width img {width: 100%;margin-top: 20px;height: 100%;}
+.orange {color: #FFA500;}
+.button {text-decoration: none;
+color:#fff;padding: 20px 80px;background-image: linear-gradient(45deg, #FF9874, #FF6A4D);border-radius: 5px;}
+section {overflow: hidden;}
+.top {background-image: url("images/top-banner.png");background-repeat: no-repeat;}
+.middle {background-image: url("images/dream-bg.png");background-repeat: no-repeat;}
+.bottom {background-image: url("images/exp-bg.png");background-repeat: no-repeat;background-position:left;height: 700px;}
+.bottom h1 {font-size: 46px;}
+.exp {font-size: 40px;}
+.block {box-shadow: 10px 10px 40px gray;height: 400px;padding: 1%;width:37%;}
+.border1 {border-left:8px solid;border-image:linear-gradient(180deg, #FFA07A, #FF6448);border-image-slice: 1;}
+.border2 {border-left: 8px solid; border-image: linear-gradient(180deg, #0003FF, #00FCFF);border-image-slice: 1;}
+footer p{font-size: small;text-align: center;}
+footer {margin-bottom: 10px;}
