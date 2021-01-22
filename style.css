@@ -13,7 +13,7 @@ section {overflow: hidden;}
 .exp {font-size: 40px;}
 .block {box-shadow: 10px 10px 40px gray;height: 400px;padding: 1%;width:20%;overflow: hidden;}
 .border1 {border-left:2px solid;border-image:linear-gradient(180deg, #FFA07A, #FF6448);border-image-slice: 1;}
-.border2 {border-left: 2px solid; border-image: linear-gradient(180deg, #0003FF, #00FCFF);border-image-slice: 1;}
+
 footer p{font-size: small;text-align: center;}
 footer {margin-bottom: 10px;margin-top: 20px;}
 .me {margin-top: 0px;}
