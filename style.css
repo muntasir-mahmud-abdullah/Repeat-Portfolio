@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;font-family: 'Yusei Magic', sans-serif;}
-.half-width {width: 40%;float: left;margin: 5%;margin-top: 25px;}
+.half-width {width: 40%;float: left;margin:0 5%;}
 .half-width h1{font-size: 48px;margin-top:0px;}
 .half-width img {width: 100%;margin-top: 20px;height: 100%;}
 .orange {      background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
@@ -30,8 +30,15 @@ section p {margin-bottom: 32px;}
 .top {background-image: url("images/top-banner.png");background-repeat: no-repeat;}
 .skill {background-image: url("images/dream-bg.png");background-repeat: no-repeat;background-position:right;}
 .bottom {background-image: url("images/exp-bg.png");background-repeat: no-repeat;background-position:left;}
+#home {padding-top: 120px;}
+#projects {padding-top: 120px;}
+#skills{padding-top: 120px;}
+#about-me {padding-top: 90px;}
 #projects .half-width{
   height: auto; 
+}
+#projects h1{
+  margin-left: 84px;margin-bottom: 24px;
 }
 #projects .half-width h2{
     background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
@@ -52,15 +59,26 @@ section p {margin-bottom: 32px;}
     color: transparent;  
   font-size: 1.1rem;
 }
-#projects .half-width a:hover{
-    background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
-      
-    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
-    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
-    
-    background-clip: text;         /* Clip background to text (for Firefox) */
-    color: transparent;  
+#projects .half-width a::after {
+  background: linear-gradient(180deg, #ff7a7a, #ff4848);
+       
+  -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+  -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+  
+  background-clip: text;         /* Clip background to text (for Firefox) */
+  color: transparent; 
+  content: "";
+  width: 0%;
+  height: 0.2em;
+  background: linear-gradient(180deg, #FFA07A, #FF6448);
+  display: block;
+  transition: 0.5s;
 }
+#projects .half-width a:hover::after {
+  width: 21%;
+}
+
+
 .bottom h1 {font-size: 46px;}
 .bottom img {
     object-fit: contain; width: 100%;margin-top: 0 !important;height: max-content !important;
@@ -123,7 +141,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 6%;
+    padding: 1% 5%;
     position: relative;
 
   }
@@ -216,4 +234,9 @@ header {
   
   .contact-info a:hover {
     text-decoration: underline;
+  }
+
+
+  #home {
+
   }
