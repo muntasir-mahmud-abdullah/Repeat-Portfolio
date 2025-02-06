@@ -2,20 +2,264 @@
 .half-width {width: 40%;float: left;margin: 5%;margin-top: 25px;}
 .half-width h1{font-size: 48px;margin-top:0px;}
 .half-width img {width: 100%;margin-top: 20px;height: 100%;}
-.orange {color: #FFA500;}
+.orange {      background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
+      
+    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+    
+    background-clip: text;         /* Clip background to text (for Firefox) */
+    color: transparent;  }
 .button {text-decoration: none;
-color:#fff;padding: 20px 80px;background-image: linear-gradient(45deg, #FF9874, #FF6A4D);border-radius: 5px;}
+    font-size: 1.2rem; padding: 20px 80px;border-radius: 5px;
+background: transparent;
+border: 2px solid #FF6A4D;
+color: #FF6A4D;
+transition: background 1s ease-in-out;
+}
+
+.button:hover{
+    color: #fff;
+    background: linear-gradient(90deg, #FFA07A, #FF6448);
+   
+
+
+}
+
 section {overflow: hidden;}
+section p {margin-bottom: 32px;}
 .top {background-image: url("images/top-banner.png");background-repeat: no-repeat;}
 .skill {background-image: url("images/dream-bg.png");background-repeat: no-repeat;background-position:right;}
-.bottom {background-image: url("images/exp-bg.png");background-repeat: no-repeat;background-position:left;height: 700px;}
+.bottom {background-image: url("images/exp-bg.png");background-repeat: no-repeat;background-position:left;}
+#projects .half-width{
+  height: auto; 
+}
+#projects .half-width h2{
+    background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
+      
+    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+    
+    background-clip: text;         /* Clip background to text (for Firefox) */
+    color: transparent;  
+}
+#projects .half-width a{
+    background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
+      
+    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+    
+    background-clip: text;         /* Clip background to text (for Firefox) */
+    color: transparent;  
+  font-size: 1.1rem;
+}
+#projects .half-width a:hover{
+    background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
+      
+    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+    
+    background-clip: text;         /* Clip background to text (for Firefox) */
+    color: transparent;  
+}
 .bottom h1 {font-size: 46px;}
-.exp {font-size: 40px;}
-.block {box-shadow: 10px 10px 40px gray;height: 400px;padding: 1%;width:20%;overflow: hidden;}
+.bottom img {
+    object-fit: contain; width: 100%;margin-top: 0 !important;height: max-content !important;
+}
+.exp {font-size: 40px;margin-left: 100px;}
+.block {box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);height: 400px;padding: 1%;width:20%;overflow: hidden;}
+.block:hover{box-shadow: 10px 10px 20px gray;
+  }
 .border1 {border-left:2px solid;border-image:linear-gradient(180deg, #FFA07A, #FF6448);border-image-slice: 1;}
-
 footer p{font-size: small;text-align: center;}
 footer {margin-bottom: 10px;margin-top: 20px;}
-.me {margin-top: 0px;}
+/* .me {margin: 0 auto;} */
+
+#about-me h1{margin-top: 32px;}
+.me img {width: max-content;margin-left: 200px;margin-top: 0;}
+/* .me {margin-top: 0px; height: 400px;} */
+/* .me img{width: 100%;height: auto;} */
 .final {padding: 15px 100px; height: 80px;width: 280px;background-color: #4E42CB;margin: auto;}}
 .final p {color: #fff;}
+
+/* header responsive css */
+@media (max-width: 1400px) {
+    html {
+      font-size: 0.6rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 0.55rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .navLinks {
+      background: linear-gradient(180deg, #FFA07A, #FF6448);;
+      height: 100vh;
+      width: 200px;
+      position: absolute;
+      top: 0;
+      right: -220px;
+      z-index: 2;
+    }
+    nav ul {
+      text-align: left;
+      padding: 0 4em;
+    }
+    nav ul li {
+      display: block;
+      padding: 2em 0;
+    }
+    nav ul li a {
+      font-size: 1.9rem;
+    }
+    nav .fa {
+      display: block;
+    }
+    nav .checkBox:checked ~ .navLinks {
+      right: 0;
+    }
+    nav .checkBox {
+      display: block;
+      position: absolute;
+      top: 22px;
+      right: 43px;
+      height: 20px;
+      width: 20px;
+      opacity: 0;
+      z-index: 999;
+    }
+  
+    nav .close:checked ~ .navLinks {
+      right: -200px;
+    }
+    .close {
+      display: block;
+      position: absolute;
+      top: 14px;
+      right: 171px;
+      width: 18px;
+      height: 18px;
+      z-index: 999;
+      opacity: 0;
+    }
+  
+    header {
+      min-height: 53vh;
+      padding-top: 2em;
+  padding-bottom: 15em;
+    }
+}
+
+
+
+/* header style */
+header {
+    background-image: linear-gradient(
+        rgba(5, 15, 47, 0.707),
+        rgba(5, 15, 47, 0.707)
+      ),
+      url(img/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+  }
+  
+  nav img {
+    width: 15rem;
+  }
+  nav ul {
+    flex: 1;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 0.8em 1.2em;
+  }
+  nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 0.2em;
+    background: linear-gradient(180deg, #FFA07A, #FF6448);
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+  }
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
+  nav .fa {
+    font-size: 3rem;
+    padding: 2rem;
+    display: none;
+    color: #fff;
+  }
+  
+  nav .checkBox {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+
+
+  .skill img{
+    width: 10%;
+  }
+
+  #contact .container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  
+  #contact .container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-info p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .contact-info a {
+    background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
+      
+    -webkit-background-clip: text;  /* Clip background to text (for Webkit browsers like Chrome, Safari) */
+    -webkit-text-fill-color: transparent;  /* Make text transparent to show gradient */
+    
+    background-clip: text;         /* Clip background to text (for Firefox) */
+    color: transparent;  
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
