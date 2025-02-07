@@ -73,6 +73,8 @@ section p {
 }
 #projects {
   padding: 120px 0;
+  width: 100%;
+  margin: 0 auto;
 }
 #skills {
   padding: 120px 0;
@@ -93,10 +95,10 @@ section p {
   height: auto;
 }
 #projects h1 {
-  margin-left: 84px;
-  margin-bottom: 24px;
+  margin-left: 5%;
+  margin-bottom: 56px;
 }
-#projects .half-width h2 {
+#projects h2 {
   background: linear-gradient(180deg, #ffa07a, #ff6448); /* Gradient */
 
   -webkit-background-clip: text; /* Clip background to text (for Webkit browsers like Chrome, Safari) */
