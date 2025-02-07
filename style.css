@@ -199,7 +199,8 @@ footer {
   margin: auto;
 }
 .final p {
-  color: #fff;
+  color: #333;
+  font-size: 18px;
 }
 
 /* header responsive css */
