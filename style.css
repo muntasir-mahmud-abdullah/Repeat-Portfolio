@@ -47,6 +47,13 @@ html {
   box-shadow: 0 4px 12px rgba(255, 100, 72, 0.4); /* Adds depth */
   transform: translateY(-3px); /* Slight lift effect on hover */
 }
+section {
+  padding: 60px 20px;  /* Adds space inside the sections */
+}
+
+.container {
+  margin-bottom: 40px; /* Adds space between sections */
+}
 
 section {
   overflow: hidden;
@@ -163,9 +170,11 @@ section p {
   padding: 1%;
   width: 20%;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .block:hover {
   box-shadow: 10px 10px 20px gray;
+  transform: translateY(-10px); 
 }
 .border1 {
   border-left: 2px solid;
