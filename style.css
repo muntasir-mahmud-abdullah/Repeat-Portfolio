@@ -30,10 +30,10 @@ section p {margin-bottom: 32px;}
 .top {background-image: url("images/top-banner.png");background-repeat: no-repeat;}
 .skill {background-image: url("images/dream-bg.png");background-repeat: no-repeat;background-position:right;}
 .bottom {background-image: url("images/exp-bg.png");background-repeat: no-repeat;background-position:left;}
-#home {padding-top: 120px;}
-#projects {padding-top: 120px;}
-#skills{padding-top: 120px;}
-#about-me {padding-top: 90px;}
+#home {padding:120px 0;}
+#projects {padding:120px 0;}
+#skills{padding:120px 0;}
+#about-me {padding:90px 0;}
 #projects .half-width{
   height: auto; 
 }
@@ -48,6 +48,9 @@ section p {margin-bottom: 32px;}
     
     background-clip: text;         /* Clip background to text (for Firefox) */
     color: transparent;  
+}
+#projects p {
+  margin-bottom: 0;padding: 12px 0;
 }
 #projects .half-width a{
     background: linear-gradient(180deg, #FFA07A, #FF6448);  /* Gradient */
@@ -79,7 +82,7 @@ section p {margin-bottom: 32px;}
 }
 
 
-.bottom h1 {font-size: 46px;}
+.bottom h1 {font-size: 48px;}
 .bottom img {
     object-fit: contain; width: 100%;margin-top: 0 !important;height: max-content !important;
 }
@@ -96,7 +99,7 @@ footer {margin-bottom: 10px;margin-top: 20px;}
 .me img {width: max-content;margin-left: 200px;margin-top: 0;}
 /* .me {margin-top: 0px; height: 400px;} */
 /* .me img{width: 100%;height: auto;} */
-.final {padding: 15px 100px; height: 80px;width: 280px;background-color: #4E42CB;margin: auto;}}
+.final {padding: 15px 100px; height: 80px;width: 280px;background-color: #F5F5F5;margin: auto;}}
 .final p {color: #fff;}
 
 /* header responsive css */
